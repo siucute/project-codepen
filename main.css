@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    /* overflow: hidden; */
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header {
+    background: #010101;
+    height: 65px;
+    min-width: 0;
+}
+
+.editor-header {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+.editor-header a {
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    margin: 0 8px;
+    height: 65px;
+    width: 30px;
+}
+
+.logo .logo_small svg {
+    display: block;
+    fill: white;
+    width: 100%;
+    height: 100%;
+}
+
+.item-title {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 120px;
+}
+
+.itemtitle-text {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.itemtitle-title {
+    font-size: 1.3rem;
+    margin: 0 0 .1rem;
+    display: flex;
+    align-items: center;
+}
+
+.itemtitle-title a {
+    color: white;
+}
+
+.itemtitle-follow {
+    display: flex;
+    align-items: center;
+}
+
+.follow--link {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #9b9dad;
+    font-size: 0.9rem;
+    text-transform: none;
+    max-width: 100%;
+}
+
+.follow-button {
+    font-size: .7rem;
+    height: 16px;
+    margin-left: 6px;
+    background-color: #47cf73;
+    color: black;
+    border: none;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+.follow-button:hover {
+    background-color: #248c46;
+    color: white;
+}
+
+.follow-button--icon {
+    font-size: 0.6rem;
+}
+
+/* .heart-button {
+    background: #444857;
+    color: white;
+    padding: 10px 16px;
+    margin: 1px 10px 1px 0;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.love--icon {
+    color: white;
+} */
+
+.button-module {
+    background: #444857;
+    color: white;
+    padding: 10px 16px;
+    margin: 1px 10px 1px 0;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-module[data-color=green] {
+    background: #47cf73;
+    color: #000;
+}
+
+
+.button-module[data-color=green]:hover {
+    background: #248c46;
+}
+
+.button-module:hover,
+.button-module:focus {
+    background: #5a5f73;
+    color: white;
+    outline-offset: 3px;
+}
+
+#main {
+    background: #eee;
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    display: block;
+}
+
+h1#title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 26px;
+}
+
+#main p {
+    text-align: center;
+    margin: 12px auto;
+}
+
+#img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+}
+
+#img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin: 10px auto;
+    display: table;
+}
+
+section {
+    display: block;
+}
+
+#heading {
+    margin: 50px auto;
+    text-align: center;
+}
+
+ul {
+    display: block;
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+li {
+    display: list-item;
+    margin: 16px 0;
+}
+
+blockquote {
+    font-style: italic;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+}
+
+#test-wrap {
+    position: relative !important; 
+    z-index: 9999 !important;
+}
