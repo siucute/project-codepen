@@ -106,29 +106,6 @@ html {
     font-size: 0.6rem;
 }
 
-/* .heart-button {
-    background: #444857;
-    color: white;
-    padding: 10px 16px;
-    margin: 1px 10px 1px 0;
-    border: 3px solid transparent;
-    border-radius: 4px;
-    display: inline-flex;
-    align-items: center;
-    vertical-align: middle;
-    position: relative;
-    font-size: 1rem;
-    line-height: 1.2;
-    text-overflow: ellipsis;
-    text-align: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.love--icon {
-    color: white;
-} */
-
 .button-module {
     background: #444857;
     color: white;
@@ -193,7 +170,7 @@ h1#title {
     margin: 0;
 }
 
-#img {
+#image {
     max-width: 100%;
     display: block;
     height: auto;
@@ -220,6 +197,7 @@ ul {
     margin: 0 auto 50px auto;
     text-align: left;
     line-height: 1.6;
+    padding-left: 40px;
 }
 
 li {
@@ -237,4 +215,62 @@ blockquote {
 #test-wrap {
     position: relative !important; 
     z-index: 9999 !important;
+}
+
+h3 {
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 18px 0;
+}
+
+#tribute-link {
+    color: #477ca7;
+}
+
+@media (max-width: 550px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media (max-width: 830px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media (max-height: 440px), (max-width: 767px) {
+    .itemtitle-title {
+        margin: 0 0 4px;
+        font-size: 1.1rem;
+    }
+    .follow--link {
+        font-size: .9rem;
+    }
+    .follow-button {
+        display: none;
+    }
+    .button-module {
+        padding: 6px 10px;
+        margin: 1px 5px 1px 0;
+        font-family: inherit;
+        font-size: .8rem;
+    }
+    #button-login {
+        display: none;
+    }
+}
+@media (max-width: 460px) {
+    #main {
+        margin: 0;
+    }
+    h1#title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+}
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 320px;
+        touch-action: manipulation;
+    }
 }
